@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="10 seconds">
+
+	<appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<charset>UTF-8</charset>
+			<pattern>[%thread] %d %-5level %logger{50} - %msg%n</pattern>
+		</encoder>
+	</appender>
+
+	<!-- Root Logger -->
+	<root level="info">
+		<appender-ref ref="CONSOLE" />
+	</root>
+	<!-- Application Loggers-->
+	<logger name="com.milo.wh" level="info">
+	</logger>
+	<logger name="java.sql" level="info">
+	</logger>
+
+	
+</configuration>
